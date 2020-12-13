@@ -16,19 +16,19 @@
       <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
+    <orderEntry type="library" name="Gradle: cglib:cglib:3.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:5.2.6.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm:7.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.alibaba:druid:1.1.21" level="project" />
+    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:5.1.47" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-core:5.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:5.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:5.2.6.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:5.2.6.RELEASE" level="project" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:5.2.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-aop:5.2.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-jdbc:5.2.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:5.1.47" level="project" />
-    <orderEntry type="library" name="Gradle: com.alibaba:druid:1.1.21" level="project" />
-    <orderEntry type="library" name="Gradle: cglib:cglib:3.3.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.2" level="project" />
-    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:5.2.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:5.2.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Gradle: org.springframework:spring-core:5.2.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:5.2.6.RELEASE" level="project" />
-    <orderEntry type="library" name="Gradle: org.ow2.asm:asm:7.1" level="project" />
-    <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:5.2.6.RELEASE" level="project" />
   </component>
 </module>

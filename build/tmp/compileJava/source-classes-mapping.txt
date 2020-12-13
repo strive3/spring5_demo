@@ -2,8 +2,8 @@ com/spring/study/jdbc/entity/Account.java
  com.spring.study.jdbc.entity.Account
 com/spring/study/jdbc/dao/AccountDao.java
  com.spring.study.jdbc.dao.AccountDao
-com/spring/study/jdbc/service/AccountService.java
- com.spring.study.jdbc.service.AccountService
+com/spring/study/bean/User.java
+ com.spring.study.bean.User
 com/spring/study/jdbc/dao/impl/AccountDaoImpl.java
  com.spring.study.jdbc.dao.impl.AccountDaoImpl
 com/spring/study/config/TransactionConfig.java
@@ -14,5 +14,5 @@ com/spring/study/config/JdbcConfig.java
  com.spring.study.config.JdbcConfig
 com/spring/study/config/SpringConfig.java
  com.spring.study.config.SpringConfig
-com/spring/study/bean/User.java
- com.spring.study.bean.User
+com/spring/study/jdbc/service/AccountService.java
+ com.spring.study.jdbc.service.AccountService
