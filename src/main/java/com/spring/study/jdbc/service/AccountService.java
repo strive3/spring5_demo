@@ -17,10 +17,12 @@ public class AccountService {
     }
 
     public void reduceAndAddMoney(){
+        //扣钱
         accountDao.reduceMoney();
         //制造异常
         Object o = null;
         o.toString();
+        //加钱
         accountDao.addMoney();
     }
 }
