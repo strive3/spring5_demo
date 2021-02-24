@@ -18,3 +18,5 @@ com/spring/study/threadlocal/MyDemo01.java
  com.spring.study.threadlocal.MyDemo01
 com/spring/study/jdbc/service/AccountService.java
  com.spring.study.jdbc.service.AccountService
+com/spring/study/threadlocal/MyDemo02.java
+ com.spring.study.threadlocal.MyDemo02
