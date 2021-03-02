@@ -10,7 +10,7 @@ import redis.clients.jedis.Transaction;
  * @Date 2021/3/2 12:48 下午
  * @Description
  */
-public class TestPing {
+public class TestJedis {
 
     private static Jedis jedis = new Jedis("152.136.142.49", 6379);
     {
