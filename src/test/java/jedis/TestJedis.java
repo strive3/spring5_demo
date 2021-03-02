@@ -14,7 +14,7 @@ public class TestJedis {
 
     private static Jedis jedis = new Jedis("152.136.142.49", 6379);
     {
-        jedis.auth("root");//这里填写密码
+        jedis.auth("");//这里填写密码
     }
 
     @Test
