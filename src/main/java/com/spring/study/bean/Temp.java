@@ -1,9 +1,12 @@
 package com.spring.study.bean;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author duxiaopeng
  * @date 2020/12/5 3:48 下午
  */
+@Component
 public class Temp {
 
     /**

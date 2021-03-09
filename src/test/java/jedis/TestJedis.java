@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Transaction;
 
+import java.util.HashMap;
+
 /**
  * @Author duxiaopeng
  * @Date 2021/3/2 12:48 下午
@@ -77,5 +79,13 @@ public class TestJedis {
             jedis.close();
         }
 
+    }
+
+    @Test
+    public void testGc(){
+        HashMap<String, String> map = new HashMap<>();
+        while (true){
+            map.put("1", "1");
+        }
     }
 }
