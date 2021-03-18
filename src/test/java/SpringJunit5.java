@@ -2,6 +2,7 @@ import com.spring.study.bean.User;
 import com.spring.study.config.SpringConfig;
 import com.spring.study.jdbc.dao.AccountDao;
 import com.spring.study.jdbc.service.AccountService;
+import com.spring.study.jdbc.service.AccountService_2;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
@@ -17,6 +18,8 @@ public class SpringJunit5 {
     @Autowired
     private AccountService accountService;
     @Autowired
+    private AccountService_2 accountService_2;
+    @Autowired
     private AccountDao accountDao;
 
     @Autowired
@@ -26,6 +29,11 @@ public class SpringJunit5 {
     @Test
     void name() {
         accountService.reduceAndAddMoney();
+    }
+
+    @Test
+    void name3() {
+        accountService_2.reduceAndAddMoney();
     }
 
     @Test

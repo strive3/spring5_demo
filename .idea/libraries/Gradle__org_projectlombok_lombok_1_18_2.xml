@@ -5,7 +5,7 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.2/777a74656e7999ef50a01b57be835bfddeb30e4c/lombok-1.18.2-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.2/lombok-1.18.2-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

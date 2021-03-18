@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SpringTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-09T02:15:32" hostname="bogon" time="0.285">
+<testsuite name="SpringTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-18T03:44:41" hostname="localhost" time="31.788">
   <properties/>
-  <testcase name="testFactoryBean()" classname="SpringTest" time="0.285"/>
-  <system-out><![CDATA[com.spring.study.bean.Temp@34afe6c9
-com.spring.study.bean.Temp@51083eb0
-User(id=0, username=null)
+  <testcase name="testSpringJdbc()" classname="SpringTest" time="31.788"/>
+  <system-out><![CDATA[Account(id=2, username=lucy, money=300)
+耗时: 565
 ]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Thu Mar 18 11:45:13 CST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
 ]]></system-err>
 </testsuite>

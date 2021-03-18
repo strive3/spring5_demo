@@ -1,6 +1,6 @@
 jedis/TestJedis.java
  jedis.TestJedis
-SpringJunit5.java
- SpringJunit5
 SpringTest.java
  SpringTest
+SpringJunit5.java
+ SpringJunit5

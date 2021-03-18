@@ -3,6 +3,8 @@ package com.spring.study.bean;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.stereotype.Component;
 
+import java.util.concurrent.CopyOnWriteArrayList;
+
 /**
  * @Author duxiaopeng
  * @Date 2021/3/9 9:59 上午

@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Transaction;
 
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import java.util.Scanner;
 
 /**
  * @Author duxiaopeng
@@ -16,7 +18,7 @@ public class TestJedis {
 
     private static Jedis jedis = new Jedis("152.136.142.49", 6379);
     {
-        jedis.auth("");//这里填写密码
+        jedis.auth("root");//这里填写密码
     }
 
     @Test
@@ -87,5 +89,38 @@ public class TestJedis {
         while (true){
             map.put("1", "1");
         }
+    }
+
+
+    @Test
+    public void testWater() {
+        System.out.println("请输入五个数");
+
+        int[] l = new int[5];
+
+        for (int i = 0; i < 5; i++){
+
+            l[i] = new Scanner(System.in).nextInt();
+        }
+
+        System.out.println(l.toString());
+    }
+
+    public static void main(String[] args) {
+        System.out.println("请输入五个数");
+
+//        int[] l = new int[5];
+//
+//        for (int i = 0; i < 5; i++){
+//
+//            l[i] = new Scanner(System.in).nextInt();
+//        }
+        String as = "aa";
+        byte[] bytes = as.getBytes(StandardCharsets.UTF_8);
+        for (int i = 0; i < bytes.length; i++) {
+            int j = bytes[i];
+            System.out.println(j);
+        }
+//        System.out.println(l.toString());
     }
 }

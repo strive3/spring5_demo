@@ -23,6 +23,7 @@
     <orderEntry type="library" name="Gradle: cglib:cglib:3.3.0" level="project" />
     <orderEntry type="library" name="Gradle: redis.clients:jedis:3.3.0" level="project" />
     <orderEntry type="library" name="Gradle: com.alibaba:fastjson:1.2.62" level="project" />
+    <orderEntry type="library" name="Gradle: org.aspectj:aspectjweaver:1.9.6" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-test:5.2.6.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: cglib:cglib-nodep:3.3.0" level="project" />
     <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.6.0" level="project" />

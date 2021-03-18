@@ -5,7 +5,7 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/5.1.47/90e03b5cec4d45d6051bf18cfdddfdc2d72dc925/mysql-connector-java-5.1.47-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
