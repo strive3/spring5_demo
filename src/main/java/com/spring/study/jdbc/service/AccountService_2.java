@@ -25,7 +25,7 @@ public class AccountService_2 {
     @Transactional(propagation = Propagation.REQUIRED)
     public void reduceAndAddMoney(){
         accountService_2.deal();
-        throw new RuntimeException();
+//        throw new RuntimeException();
     }
 
     @Transactional(propagation = Propagation.REQUIRES_NEW)

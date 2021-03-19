@@ -1,6 +1,9 @@
 import com.spring.study.bean.User;
 import com.spring.study.config.SpringConfig;
 import com.spring.study.jdbc.dao.AccountDao;
+import com.spring.study.jdbc.dao.impl.AccountDaoImpl;
+import com.spring.study.jdbc.entity.Account;
+import com.spring.study.jdbc.proxy.JDKProxy;
 import com.spring.study.jdbc.service.AccountService;
 import com.spring.study.jdbc.service.AccountService_2;
 import org.junit.jupiter.api.Test;
@@ -46,6 +49,11 @@ public class SpringJunit5 {
         System.out.println(user.toString());
     }
 
-
+    @Test
+    void testProxy(){
+        AccountDao accountDaoImpl = (AccountDao) JDKProxy.getProxy(new AccountDaoImpl());
+        Account lucy = accountDaoImpl.getAccount("lucy");
+        System.out.println(lucy);
+    }
 
 }

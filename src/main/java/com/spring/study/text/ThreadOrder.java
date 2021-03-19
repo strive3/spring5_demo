@@ -1,6 +1,7 @@
 package com.spring.study.text;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -25,7 +26,7 @@ public class ThreadOrder {
             for (int i = 0; i < 10; i++) {
                 try {
                     System.out.print("A");
-                    conB.signal();//唤醒B
+                    if (i != 0) conB.signal();//唤醒B
                     if (i == 0) latchB.countDown();
                     conA.await();//A进入睡眠
                 } catch (InterruptedException e) {
@@ -38,8 +39,8 @@ public class ThreadOrder {
 
         Thread threadB = new Thread(()->{
             try {
-                lock.lock();
                 latchB.await();//这里是为了保障第一次打印的是线程A
+                lock.lock();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -59,8 +60,8 @@ public class ThreadOrder {
 
         Thread threadC = new Thread(()->{
             try {
-                lock.lock();
                 latchC.await();//这里是为了保障第一次打印的是线程A
+                lock.lock();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -77,8 +78,8 @@ public class ThreadOrder {
             lock.unlock();
         },"c");
 
-        threadA.start();
         threadB.start();
         threadC.start();
+        threadA.start();
     }
 }

@@ -4,6 +4,10 @@ import com.spring.study.bean.TestArthas;
 import com.spring.study.bean.User;
 import com.spring.study.config.SpringConfig;
 import com.spring.study.jdbc.aop.MyAspect;
+import com.spring.study.jdbc.dao.AccountDao;
+import com.spring.study.jdbc.dao.impl.AccountDaoImpl;
+import com.spring.study.jdbc.entity.Account;
+import com.spring.study.jdbc.proxy.JDKProxy;
 import com.spring.study.jdbc.service.AccountService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -177,4 +181,12 @@ public class SpringTest {
         Executors.newSingleThreadExecutor();
         Executors.newScheduledThreadPool(3);
     }
+
+    @Test
+    void testProxy(){
+        AccountDao accountDaoImpl = (AccountDao) JDKProxy.getProxy(new AccountDaoImpl());
+        int a = accountDaoImpl.get1();
+        System.out.println(a);
+    }
+
 }

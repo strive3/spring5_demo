@@ -32,4 +32,9 @@ public class AccountDaoImpl implements AccountDao {
         String sql = "select * from t_account where username = ?";
         return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<Account>(Account.class), username);
     }
+
+    @Override
+    public int get1() {
+        return 1;
+    }
 }

@@ -8,4 +8,6 @@ public interface AccountDao {
     void reduceMoney();
 
     Account getAccount(String username);
+
+    int get1();
 }

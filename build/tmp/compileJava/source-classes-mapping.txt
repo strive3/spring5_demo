@@ -1,5 +1,7 @@
-com/spring/study/text/ThreadOrder.java
- com.spring.study.text.ThreadOrder
+com/spring/study/jdbc/service/AccountService.java
+ com.spring.study.jdbc.service.AccountService
+com/spring/study/jdbc/proxy/AccountProxy.java
+ com.spring.study.jdbc.proxy.AccountProxy
 com/spring/study/config/TransactionConfig.java
  com.spring.study.config.TransactionConfig
 com/spring/study/bean/MyFactoryBean.java
@@ -18,19 +20,21 @@ com/spring/study/bean/Singleton.java
  com.spring.study.bean.Singleton
 com/spring/study/bean/TestArthas.java
  com.spring.study.bean.TestArthas
-com/spring/study/jdbc/service/AccountService.java
- com.spring.study.jdbc.service.AccountService
+com/spring/study/config/SpringConfig.java
+ com.spring.study.config.SpringConfig
+com/spring/study/jdbc/aop/MyAspect.java
+ com.spring.study.jdbc.aop.MyAspect
 com/spring/study/threadlocal/MyDemo01.java
  com.spring.study.threadlocal.MyDemo01
 com/spring/study/config/MyBeanDefinitionRegistrar.java
  com.spring.study.config.MyBeanDefinitionRegistrar
+com/spring/study/jdbc/proxy/JDKProxy.java
+ com.spring.study.jdbc.proxy.JDKProxy
 com/spring/study/jdbc/dao/AccountDao.java
  com.spring.study.jdbc.dao.AccountDao
 com/spring/study/jdbc/dao/impl/AccountDaoImpl.java
  com.spring.study.jdbc.dao.impl.AccountDaoImpl
 com/spring/study/jdbc/service/AccountService_2.java
  com.spring.study.jdbc.service.AccountService_2
-com/spring/study/config/SpringConfig.java
- com.spring.study.config.SpringConfig
-com/spring/study/jdbc/aop/MyAspect.java
- com.spring.study.jdbc.aop.MyAspect
+com/spring/study/text/ThreadOrder.java
+ com.spring.study.text.ThreadOrder
