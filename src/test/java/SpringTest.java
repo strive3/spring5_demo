@@ -21,11 +21,11 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class SpringTest {
 
@@ -187,6 +187,46 @@ public class SpringTest {
         AccountDao accountDaoImpl = (AccountDao) JDKProxy.getProxy(new AccountDaoImpl());
         int a = accountDaoImpl.get1();
         System.out.println(a);
+    }
+
+    @Test
+    void testInteger(){
+        Integer a = 127;
+        Integer b = 127;
+
+        Integer c = new Integer(127);
+        System.out.println(a == b);
+        System.out.println(a == c);
+    }
+
+    @Test
+    void testJava8(){
+        List<Integer> integers = new ArrayList<>();
+        integers.add(5);
+        integers.add(2);
+        integers.add(4);
+        integers.add(6);
+        integers.forEach(a -> System.out.println(a));
+        integers = integers.stream().sorted(Comparator.comparing(Integer::intValue)).collect(Collectors.toList());
+        integers.forEach(System.out::println);
+    }
+
+    @Test
+    void testIntern(){
+        String s1 = new StringBuilder().append("计算机").append("原理").toString();
+        System.out.println(s1.intern() == s1);
+        String s2 = new StringBuilder().append("ja").append("va").toString();
+        System.out.println(s2.intern() == s2);
+    }
+
+    @Test
+    void testList(){
+        ArrayList<String> strings = new ArrayList<>();
+        strings.add("aaa");
+        String bbb = new String("BBB");
+        strings.add(new String("BBB"));
+
+        System.out.println(strings.contains(bbb));
     }
 
 }
