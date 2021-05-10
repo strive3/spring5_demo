@@ -13,7 +13,7 @@ import javax.sql.DataSource;
  */
 @PropertySource("classpath:jdbc.properties")
 public class JdbcConfig {
-    @Value("${jdbc.driverName}")
+    @Value("${jdbc.driverName}")//读取配置信息
     private String driverName;
     @Value("${jdbc.url}")
     private String url;

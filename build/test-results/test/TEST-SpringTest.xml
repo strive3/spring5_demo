@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SpringTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-18T08:07:24" hostname="bogon" time="0.01">
+<testsuite name="SpringTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-01T03:35:27" hostname="localhost" time="0.007">
   <properties/>
-  <testcase name="testProxy()" classname="SpringTest" time="0.01"/>
-  <system-out><![CDATA[方法执行前
-方法执行后
-1
+  <testcase name="testList()" classname="SpringTest" time="0.007"/>
+  <system-out><![CDATA[true
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

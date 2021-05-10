@@ -3,10 +3,8 @@ import com.spring.study.bean.Temp;
 import com.spring.study.bean.TestArthas;
 import com.spring.study.bean.User;
 import com.spring.study.config.SpringConfig;
-import com.spring.study.jdbc.aop.MyAspect;
 import com.spring.study.jdbc.dao.AccountDao;
 import com.spring.study.jdbc.dao.impl.AccountDaoImpl;
-import com.spring.study.jdbc.entity.Account;
 import com.spring.study.jdbc.proxy.JDKProxy;
 import com.spring.study.jdbc.service.AccountService;
 import org.junit.jupiter.api.Test;
@@ -18,14 +16,11 @@ import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.*;
-import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class SpringTest {
 
